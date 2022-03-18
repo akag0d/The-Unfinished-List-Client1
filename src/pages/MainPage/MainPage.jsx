@@ -7,7 +7,7 @@ import AddFavourites from '../../components/AddFavourites';
 import RemoveFavourites from '../../components/RemoveFavourites';
 import '../../App.css'
 
-const Main = () => {
+const MainPage = () => {
 	const [movies, setMovies] = useState([]);
 	const [favourites, setFavourites] = useState([]);
 	const [searchValue, setSearchValue] = useState('');
@@ -61,21 +61,21 @@ const Main = () => {
     
 		  
 		<div className='container-fluid movie-app'>
-			<div className='row d-flex align-items-center mt-4 mb-4'>
+			<div className='row'>
 				<MovieListHeading heading='Movies' />
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
-			<div className='row'>
+			<div className='movie-row'>
 				<MovieList
 					movies={movies}
 					handleFavouritesClick={addFavouriteMovie}
 					favouriteComponent={AddFavourites}
 				/>
 			</div>
-			<div className='row d-flex align-items-center mt-4 mb-4'>
+			<div className='movie-row' >
 				<MovieListHeading heading='Favourites' />
 			</div>
-			<div className='row'>
+			<div className='movie-row' >
 				<MovieList
 					movies={favourites}
 					handleFavouritesClick={removeFavouriteMovie}
@@ -87,4 +87,4 @@ const Main = () => {
 	);
 };
 
-export default Main;
+export default MainPage;

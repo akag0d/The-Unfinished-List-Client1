@@ -7,11 +7,11 @@ function Navbar() {
   //const { theme, toggleTheme } = useContext(ThemeContext);
   const { loggedIn, user, logoutUser } = useContext(AuthContext);
   return (
-    <nav className={'Navbar '}>
+    <nav className={'Navbar'}>
       <Link to="/"> Home</Link>
       {loggedIn && (
         <>
-          <Link to="/projects"> Projects</Link>
+          <Link to="/projects"> </Link>
           {user.username}
           <button onClick={logoutUser}>Logout</button>
         </>

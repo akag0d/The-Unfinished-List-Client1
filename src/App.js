@@ -1,5 +1,5 @@
 import React from 'react'
-import Main from './pages/MainPage/MainPage'
+import MainPage from './pages/MainPage/MainPage'
 import Home from './pages/HomePage/HomePage'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
@@ -13,6 +13,7 @@ function App() {
 		<Navbar />
 		<Routes>
         <Route path="/" element={<Home/>} />
+		<Route path="/main" element={<MainPage/>} />
 		<Route path="/login" element={<LoginPage/>} />
 		<Route path="/signup" element={<SignupPage/>} />
         </Routes>

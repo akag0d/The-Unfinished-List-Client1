@@ -1,6 +1,7 @@
 body {
   background: #141414;
   color: #ffffff;
+  font-size: large;
 }
 
 .movie-app > .row {
@@ -32,4 +33,29 @@ body {
   font-size: 20px;
   padding: 20px;
   text-align: center;
+}
+
+.Navbar {
+  overflow: hidden;
+  display: flex;
+}
+
+.Navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.title {
+  height: 500;
+  width: 1000vw;
+  text-align: right;
+}
+
+.main {
+  width: 100vw;
 }

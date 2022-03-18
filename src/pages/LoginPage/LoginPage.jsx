@@ -25,7 +25,7 @@ function LoginPage() {
         console.log('res.data', response.data);
         storeToken(response.data.authToken);
         authenticateUser();
-        navigate('/');
+        navigate('/main');
       })
       .catch((err) => console.log(err));
   };
